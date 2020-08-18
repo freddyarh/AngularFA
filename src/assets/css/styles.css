@@ -1,0 +1,264 @@
+/*Importar fuentes custom*/
+
+/*Generales*/
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        background: rgb(209, 187, 191);
+    }
+
+/*Barra de navegacion*/
+
+header{
+    width: 100%;
+    height: 90px;
+    background: rgba(53, 103, 164, 0.8);
+    display: block;
+    text-transform: uppercase;
+}
+
+header ul {
+    /*display: inline-block;*/
+    width: 780px;
+    height: inherit;
+    margin: 0px auto;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 85px;
+}
+
+header a{
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: inherit;
+    text-decoration: none;
+    color: white;
+    transition: all 300ms;
+}
+
+header a:hover,
+.actived{
+    background: rgba(0, 0, 0, 0.8);
+}
+header #logo a:hover{
+    background: transparent;
+}
+
+/*Logotipo*/
+
+#logo{
+    font-family: cursive;
+    font-size: 30px;
+}
+
+#loogo a {
+    transition: color 500ms, transform 50ms;
+}
+
+#logo a:hover{
+    background: transparent;
+    color: black;
+    transform: scale(1.50,1.50);
+}
+
+/*Contenedor principal*/
+
+#content {
+    min-height: 700px;
+    width: 75%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 40px black;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/*Pie de pagina*/
+footer {
+    width: 75%;
+    margin: 0px auto;
+    padding-top: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+/*About*/
+#title{
+    width:70%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+
+#title h1{
+    font-family: cursive;
+    font-size: 60px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+#title h2{
+    font-size: 25px;
+    color: gray;
+    margin-top: 13px;
+    margin-bottom: 5px;
+}
+
+article.about{
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.about h2{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.about p{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+/*Seccion con formulario*/
+
+.container{
+    padding: 50px;
+    padding-top: 10px; 
+}
+
+.container .image{
+    float: left;
+    width: 47%;
+}
+.container .image img{
+    width: 100%;
+}
+
+.container .data{
+    float: left;
+    width: 49%;
+    margin-left: 30px;
+
+}
+
+.container h2{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+form label{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form textarea{
+    width: 30%;
+    padding: 5px;
+}
+
+form button,
+form input[type="submit"],
+.button-edit,
+.button-delete{
+    display: block;
+    font-size: 17px;
+    padding: 10px;
+    margin-top: 15px;
+    color: white;
+    background: rgba(53, 103, 164, 1);
+    border: 1px solid rgba(13, 67, 133, 1);
+    cursor: pointer;
+}
+
+.button-edit,
+.button-delete{
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.button-edit{
+    background: orange;
+    border: none;
+}
+.button-delete{
+    background: red;
+    border: none;
+}
+
+form button:hover,
+form input[type="submit"]:hover{
+    background: rgba(53, 103, 164, 0.8);
+    border: 1px solid rgba(13, 67, 133, 1);
+}
+
+form input[disabled]{
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.form_error{
+    padding: 13px;
+    padding: 3px;
+    background: red;
+    color: white;
+}
+
+.message{
+    width: 54%;
+    padding: 5px;
+    border: 1px solid #eee;
+}
+
+.success{
+    background: green;
+    color: white;
+}
+
+.message a{
+    color: white;
+}
+
+.failed{
+    background: red;
+    color:white;
+}
+
+/*Pagina de proyectos*/
+
+.project{
+    list-style: none;
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-left: 32px;
+    margin-right: 20px;
+}
+
+.project .image{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.project img{
+    width: 100%;
+}
+
+.project a{
+    text-decoration: none;
+    color: black;
+}
